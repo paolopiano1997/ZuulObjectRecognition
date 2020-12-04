@@ -8,9 +8,11 @@ spring:
 
 eureka:
   instance:
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 3
+    leaseRenewalIntervalInSeconds: 10
+    leaseExpirationDurationInSeconds: 30
     #instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
-
+  client:
+    serviceUrl:
+      defaultZone: http://137.204.57.68:8761/eureka/
 server:
   port: 8081

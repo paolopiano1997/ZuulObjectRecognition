@@ -20,8 +20,10 @@ public class UploadController {
 
 	
     //Save the uploaded file to this folder
-    private static String UPLOADED_FOLDER = "D://Upload//prova.jpg";
+    //private static String UPLOADED_FOLDER = "D:\\Upload\\prova.jpg";
 
+	private static String UPLOADED_FOLDER = "/home/debian/prova.jpg";
+	
     @RequestMapping("/predict")
     public String singleFileUpload() {
     	

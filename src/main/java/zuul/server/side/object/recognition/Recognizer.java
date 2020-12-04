@@ -16,8 +16,9 @@ public class Recognizer {
 
 	//private static String base_dir = "D:\\Documenti\\Corsi di Studio Magistrale\\Corsi di studio Secondo Anno\\Primo Semestre\\Sistemi Distribuiti\\Progetto\\ObjectRecognition\\inception_dec_2015";
 	
-	private static String base_dir = "D:\\Documenti\\Paolo\\Sistemi Distribuiti\\Progetto\\ObjectRecognition\\inception_dec_2015"; //PC fisso
+	//private static String base_dir = "D:\\Documenti\\Paolo\\Sistemi Distribuiti\\Progetto\\ObjectRecognition\\inception_dec_2015"; //PC fisso
 
+	private static String base_dir = "/home/debian/inception_dec_2015";
 	
 	private static byte[] graphDef = readAllBytesOrExit(Paths.get(base_dir, "tensorflow_inception_graph.pb"));
 
